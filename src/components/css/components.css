@@ -429,6 +429,32 @@
   padding-left: 50px;
 }
 
+.detail-end{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.detail-end i{
+  font-size: 60px;
+  color: black;
+}
+
+.detail-end > div{
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black;
+  color: white; */
+
+}
+
+
 /* Item Count */
 
 .item-count-container {
@@ -880,6 +906,8 @@
     justify-content: center;
     align-items: center;
   }
+
+
   .checkout-message h2 {
     padding-bottom: 20px;
     margin-top: 100px;

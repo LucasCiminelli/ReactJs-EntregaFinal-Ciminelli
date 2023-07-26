@@ -40,6 +40,30 @@ const ItemDetail = ({ item }) => {
               />
             </div>
           </div>
+          <div className="detail-end d-flex flex-row flex-wrap mt-3 pt-3 align-items-center">
+            <div className="  mt-3 text-center">
+              <i class="bi bi-truck"></i>
+              <h5>
+                WE SHIP YOUR PURCHASE <br />
+                <p>Free deliveries to all the country</p>
+              </h5>
+            </div>
+            <div className="  mt-3 text-center">
+              <h5>
+                <i class="bi bi-credit-card"></i>
+                <br />
+                PAY AS YOU WISH
+                <br /> <p>All payment methods</p>
+              </h5>
+            </div>
+            <div className="  mt-3 text-center">
+              <i class="bi bi-chat-square-heart"></i>
+              <h5>
+                WE ARE MANUFACTURERS
+                <br /> <p>Wholesale and retail sales</p>
+              </h5>
+            </div>
+          </div>
         </row>
       </Container>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
