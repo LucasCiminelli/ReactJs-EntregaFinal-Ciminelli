@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Item from "./Item";
 
 const ItemList = ({ productos, title}) => {
-  
+    
 
   return (
     <div className="w-100">

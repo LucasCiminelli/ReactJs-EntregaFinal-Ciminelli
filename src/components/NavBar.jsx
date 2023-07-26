@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
-import Cart from "./Cart";
+import CartWidget from "./CartWidget";
 
 export const NavBar = () => {
   const [isNav3Visible, setIsNav3Visible] = useState(true);
@@ -34,7 +34,7 @@ export const NavBar = () => {
               Gentlemen's Club
             </NavLink>
             <NavLink className="nav-link text-white" to="/cart">
-              <Cart />
+              <CartWidget />
             </NavLink>
             <div className="nav-link ms-auto"></div>
             <Nav className="nav-link ms-auto">
@@ -52,37 +52,37 @@ export const NavBar = () => {
         <Container className="d-flex justify-content-center align-items-center">
           <row className="navegador">
             <Nav>
-              <NavLink className="nav-link text-white" to="/">
+              <NavLink className="nav-link " to="/">
                 Home
               </NavLink>
-              <NavLink className="nav-link ms-3 text-white" to="/products">
+              <NavLink className="nav-link ms-3 " to="/products">
                 Products
               </NavLink>
               <NavLink
-                className="nav-link ms-3 text-white"
+                className="nav-link ms-3 "
                 to="/category/t-shirt"
               >
                 T-Shirts
               </NavLink>
               <NavLink
-                className="nav-link ms-3 text-white"
+                className="nav-link ms-3 "
                 to="/category/sweater"
               >
                 Sweaters
               </NavLink>
               <NavLink
-                className="nav-link ms-3 text-white"
+                className="nav-link ms-3 "
                 to="/category/pants"
               >
                 Pants
               </NavLink>
               <NavLink
-                className="nav-link ms-3 text-white"
+                className="nav-link ms-3 "
                 to="/category/shoes"
               >
                 Shoes
               </NavLink>
-              <NavLink className="nav-link ms-3 text-white" to="/category/cap">
+              <NavLink className="nav-link ms-3 " to="/category/cap">
                 Caps
               </NavLink>
             </Nav>
@@ -90,27 +90,27 @@ export const NavBar = () => {
         </Container>
       </Navbar>
       <div>
-        <row className={isNav3Visible ? "nav3" : "actived bg-dark show"}>
+        <row className={isNav3Visible ? "nav3" : "actived  show"}>
           <Nav className="navegador2" bg="dark">
-            <NavLink className="nav-link2 text-white" to="/">
+            <NavLink className="nav-link2 " to="/">
               Home
             </NavLink>
-            <NavLink className="nav-link2 text-white" to="/products">
+            <NavLink className="nav-link2 " to="/products">
               Products
             </NavLink>
-            <NavLink className="nav-link2 text-white" to="/category/t-shirt">
+            <NavLink className="nav-link2 " to="/category/t-shirt">
               T-Shirts
             </NavLink>
-            <NavLink className="nav-link2 text-white" to="/category/sweater">
+            <NavLink className="nav-link2 " to="/category/sweater">
               Sweaters
             </NavLink>
-            <NavLink className="nav-link2 text-white" to="/category/pants">
+            <NavLink className="nav-link2 " to="/category/pants">
               Pants
             </NavLink>
-            <NavLink className="nav-link mt-4  text-white" to="/category/shoes">
+            <NavLink className="nav-link2   " to="/category/shoes">
               Shoes
             </NavLink>
-            <NavLink className="nav-link  text-white" to="/category/cap">
+            <NavLink className="nav-link2  " to="/category/cap">
               Caps
             </NavLink>
           </Nav>

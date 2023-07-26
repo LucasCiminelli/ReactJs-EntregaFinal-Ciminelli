@@ -2,7 +2,10 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+
 const Item = ({ producto }) => {
+
+
   return (
     <div className="producto col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2 d-flex flex-column ">
       <div className="card-container d-flex flex-column mx-1">
@@ -25,7 +28,7 @@ const Item = ({ producto }) => {
             >
               {producto.title}
             </h5>
-            
+
             <i class="cart1 bi bi-bag-plus"></i>
             <Link className="info" to={`/item/${producto.id}`}>
               <i class=" bi bi-info-lg"></i>
