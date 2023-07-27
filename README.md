@@ -10,6 +10,9 @@ In this application you will be able to browse the different sections of the pag
 The products in the catalog and categories are brought from the Firebase database and rendered in the application using Javascript and Firebase logic and methods. Each product has a unique ID generated automatically by Firebase.
  
 You will be able to access a product detail and indicate the quantity you want to add, with a limit on the available stock of the product.
+
+If you choose to enter an id that does not exist in the firebase database, the application will send a loader, analyze the id and if it resolves that it does not exist it will launch a banner on the screen indicating that the product does not exist and inviting the user to return to the store.
+
 When added, the item will be rendered in the "Cart" component with its quantity, unit price, sub-total and image.  
 
 The user will also be notified by a Toastify that a product has been added to the cart and the CartWidget will render a number corresponding to the number of products added to the cart by the user.
