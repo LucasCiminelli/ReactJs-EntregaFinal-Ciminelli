@@ -11,7 +11,7 @@ The products in the catalog and categories are brought from the Firebase databas
  
 You will be able to access a product detail and indicate the quantity you want to add, with a limit on the available stock of the product.
 
-If you choose to enter an id that does not exist in the firebase database, the application will send a loader, analyze the id and if it resolves that it does not exist it will launch a banner on the screen indicating that the product does not exist and inviting the user to return to the store.
+If you choose to enter by URL an id that does not exist in the firebase database, the application will send a loader, analyze the id and if it resolves that it does not exist it will launch a banner on the screen indicating that the product does not exist and inviting the user to return to the store.
 
 When added, the item will be rendered in the "Cart" component with its quantity, unit price, sub-total and image.  
 
