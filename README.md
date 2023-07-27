@@ -1,9 +1,19 @@
 # Welcome to my proyect "Gentlement's Club"
 
+### Tech Stack
+
+ ReactJs, Javascript, Bootstrap5, NodeJs, Firebase,     Github, Toastify
+
+
+## Introduction 
+
 For this project I created an interactive, modern and scalable E-Commerce from scratch. 
 For this project I used the following technologies: ReactJs, Javascript, Bootstrap5, Firebase and Github to manage the versions.
 
-Javascript to handle the logic of the project. ReactJs to render the components. Bootstrap5 and Css for styling. Firebase as server.
+Javascript to handle the logic of the project. ReactJs to render the components. Bootstrap5 and Css for styling. Firebase as server. With bootstrap5 and Css I managed to create a nice design, interactive with the end user and responsive, adaptable to all devices.
+
+
+## Flow and functionalities
 
 In this application you will be able to browse the different sections of the page, you will be able to enter the different categories, to which a filter was applied to redirect to specific products.
 
@@ -26,4 +36,6 @@ You will also be able to leave and reload the page without losing the products i
 
 Once you have finished shopping, you can go to the "Checkout" component, where you will find a summary of your purchase and a form to fill out. Once the fields are completed, you will press the "Purchase" button and a unique and automatic order ID will be generated and saved in the Firebase database and this id will then be rendered on screen along with a thank you message for your purchase. 
 
-With bootstrap5 and Css I managed to create a nice design, interactive with the end user and responsive, adaptable to all devices.
+
+### Lucas Ciminelli.
+
