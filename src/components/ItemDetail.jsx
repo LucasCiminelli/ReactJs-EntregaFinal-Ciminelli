@@ -43,25 +43,24 @@ const ItemDetail = ({ item }) => {
           <div className="detail-end d-flex flex-row flex-wrap mt-3 pt-3 align-items-center">
             <div className="  mt-3 text-center">
               <i class="bi bi-truck"></i>
-              <h5>
+              <h6>
                 WE SHIP YOUR PURCHASE <br />
                 <p>Free deliveries to all the country</p>
-              </h5>
+              </h6>
             </div>
             <div className="  mt-3 text-center">
-              <h5>
-                <i class="bi bi-credit-card"></i>
-                <br />
+              <i class="bi bi-credit-card"></i>
+              <h6>
                 PAY AS YOU WISH
                 <br /> <p>All payment methods</p>
-              </h5>
+              </h6>
             </div>
             <div className="  mt-3 text-center">
               <i class="bi bi-chat-square-heart"></i>
-              <h5>
+              <h6>
                 WE ARE MANUFACTURERS
                 <br /> <p>Wholesale and retail sales</p>
-              </h5>
+              </h6>
             </div>
           </div>
         </row>
