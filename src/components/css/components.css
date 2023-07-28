@@ -81,12 +81,12 @@
   color: orange;
 }
 
-
 .nav2 .nav-link2:hover {
   color: orange;
 }
 
-.nav3, .actived{
+.nav3,
+.actived {
   backdrop-filter: blur(8px);
   background-image: linear-gradient(
     to top,
@@ -429,7 +429,7 @@
   padding-left: 50px;
 }
 
-.detail-end{
+.detail-end {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -437,12 +437,12 @@
   font-size: 20px;
 }
 
-.detail-end i{
+.detail-end i {
   font-size: 40px;
   color: black;
 }
 
-.detail-end > div{
+.detail-end > div {
   width: 260px;
   height: 150px;
   display: flex;
@@ -451,9 +451,7 @@
   align-items: center;
   /* background-color: black;
   color: white; */
-
 }
-
 
 /* Item Count */
 
@@ -618,14 +616,14 @@
   text-decoration: none;
 }
 
-.sum-rest{
+.sum-rest {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
-.resta, .suma {
+.resta,
+.suma {
   cursor: pointer;
   font-weight: 400;
   border: 1px solid black;
@@ -634,7 +632,8 @@
   transition: 0.5s ease;
 }
 
-.resta:hover, .suma:hover{
+.resta:hover,
+.suma:hover {
   background-color: black;
   color: white;
 }
@@ -798,7 +797,8 @@
   .actived {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    flex-wrap: wrap;
+    
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -807,6 +807,7 @@
     position: absolute;
     width: 100%;
     z-index: 10;
+    height: 80vh;
   }
 
   .navegador2 {
@@ -875,14 +876,16 @@
   .cart-products-checkout {
     width: 90%;
   }
-  
-  .suma, .resta{
+
+  .suma,
+  .resta {
     align-items: center;
     justify-content: center;
     border: none;
     padding: 0px 0px;
   }
-  .suma:hover, .resta:hover{
+  .suma:hover,
+  .resta:hover {
     background-color: white;
     color: black;
   }
@@ -900,13 +903,41 @@
     text-align: center;
   }
 
-  .social {
+  .footer-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
 
+  .footer-container ul{
+    padding: 0px 0px;
+    margin: 10px 0px;
+    
+  }
+
+  .footer-container h6{
+    padding: 0px 0px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social ul li {
+    padding: 0px 12px;
+  }
 
   .checkout-message h2 {
     padding-bottom: 20px;
@@ -942,6 +973,5 @@
     margin-bottom: 70px;
     padding-right: 10px;
     padding-left: 10px;
-    
   }
 }

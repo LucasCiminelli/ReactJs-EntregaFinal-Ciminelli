@@ -43,7 +43,7 @@ const Footer = () => {
                 <li>Contact us</li>
             </ul>
           </div>
-          <div className="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div className="col-xs-12 col-sm-3 col-md-3 col-lg-3 mb-3">
             <h6>Tems & Conditions</h6>
             <ul>
                 <li>Cookies Policy</li>
