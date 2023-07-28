@@ -14,9 +14,10 @@ export const NavBar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleNavClick = () =>{
-    setIsNav3Visible(!isNav3Visible);
-  }
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(true);
+    setIsNav3Visible(true);
+  };
 
   return (
     <div>
@@ -36,16 +37,16 @@ export const NavBar = () => {
             <NavLink className="nav-link pe-3" onClick={handleMenuClick}>
               <i class="menu bi bi-list"></i>
             </NavLink>
-            <NavLink className="logo" to="/" onClick={handleNavClick}>
+            <NavLink className="logo" to="/" onClick={(closeMobileMenu)}>
               Gentlemen's Club
             </NavLink>
-            <NavLink className="nav-link text-white" to="/cart" onClick={handleNavClick}>
+            <NavLink className="nav-link text-white" to="/cart" onClick={closeMobileMenu}>
               <CartWidget />
             </NavLink>
             <div className="nav-link ms-auto"></div>
             <Nav className="nav-link ms-auto">
               <NavLink to="/account" className="nav-link">
-                <i className="ingresar bi bi-person-fill" onClick={handleNavClick}></i>
+                <i className="ingresar bi bi-person-fill" onClick={closeMobileMenu}></i>
               </NavLink>
               <NavLink to="/account" className="nav-link">
                 <i className="ingresar1 bi bi-person-fill"> Account</i>
