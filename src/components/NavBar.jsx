@@ -35,7 +35,7 @@ export const NavBar = () => {
         <Navbar bg="dark" data-bs-theme="dark" className="nav1 flex-wrap">
           <Container fluid className="px-3">
             <NavLink className="nav-link pe-3" onClick={handleMenuClick}>
-              <i class="menu bi bi-list"></i>
+              <i className="menu bi bi-list"></i>
             </NavLink>
             <NavLink className="logo" to="/" onClick={(closeMobileMenu)}>
               Gentlemen's Club

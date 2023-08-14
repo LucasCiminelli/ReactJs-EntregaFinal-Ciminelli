@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import Container from "react-bootstrap/esm/Container";
+import {Container, Row} from "react-bootstrap";
 import ItemCount from "./ItemCount";
 import { CartContext } from "../context/CartContext";
 
@@ -20,7 +20,7 @@ const ItemDetail = ({ item }) => {
   return (
     <>
       <Container fluid className="px-0 mx-0">
-        <row>
+        <Row>
           <div className="detail-container d-flex justify-content-center   py-5 flex-wrap ">
             <div className="">
               <img className="detail-img" src={item.image} alt={item.title} />
@@ -42,28 +42,28 @@ const ItemDetail = ({ item }) => {
           </div>
           <div className="detail-end d-flex flex-row flex-wrap mt-3 pt-3 align-items-center">
             <div className="  mt-3 text-center">
-              <i class="bi bi-truck"></i>
+              <i className="bi bi-truck"></i>
               <h6>
                 WE SHIP YOUR PURCHASE <br />
                 <p>Free deliveries to all the country</p>
               </h6>
             </div>
             <div className="  mt-3 text-center">
-              <i class="bi bi-credit-card"></i>
+              <i className="bi bi-credit-card"></i>
               <h6>
                 PAY AS YOU WISH
                 <br /> <p>All payment methods</p>
               </h6>
             </div>
             <div className="  mt-3 text-center">
-              <i class="bi bi-chat-square-heart"></i>
+              <i className="bi bi-chat-square-heart"></i>
               <h6>
                 WE ARE MANUFACTURERS
                 <br /> <p>Wholesale and retail sales</p>
               </h6>
             </div>
           </div>
-        </row>
+        </Row>
       </Container>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path

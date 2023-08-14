@@ -12,31 +12,30 @@ import Footer from "./components/Footer";
 import Checkout from "./components/Checkout";
 
 function App() {
-  
   return (
     <>
       <CartProvider>
         <BrowserRouter>
           <NavBar />
 
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Carrousel /> <Categories /> <ItemListContainer />
-                </>
-              }
-            />
-            <Route path="/products" element={<ItemListContainer />} />
-            <Route path="/category/:type" element={<ItemListContainer />} />
-            <Route path="/item/:id" element={<ItemDetailContainer />} />
-            <Route path="/categories" element={<Categories />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
-          </Routes>
+            <Routes>
+              <Route
+               path="/"
+               element={
+                  <>
+                    <Carrousel /> <Categories /> <ItemListContainer />
+                  </>
+                }
+              />
+              <Route path="/products" element={<ItemListContainer />} />
+              <Route path="/category/:type" element={<ItemListContainer />} />
+              <Route path="/item/:id" element={<ItemDetailContainer />} />
+              <Route path="/categories" element={<Categories />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+            </Routes>
         </BrowserRouter>
-        <Footer />
+          <Footer />
       </CartProvider>
     </>
   );

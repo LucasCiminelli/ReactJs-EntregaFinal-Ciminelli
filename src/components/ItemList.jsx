@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
+import {Container, Row} from "react-bootstrap";
 import Item from "./Item";
 
 const ItemList = ({ productos, title}) => {
@@ -9,13 +9,13 @@ const ItemList = ({ productos, title}) => {
     <div className="w-100">
       <h5 className="list-title ms-5 pt-5">{title}</h5>
       <Container className="w-100">
-        <row>
+        <Row>
           <div className="productos d-flex justify-content-center align-items center flex-wrap mx-1 w-100">
             {productos.map((prod) => (
               <Item producto={prod} key={prod.id} />
             ))}
           </div>
-        </row>
+        </Row>
       </Container>
     </div>
   );

@@ -10,7 +10,7 @@ const ItemCount = ({ cantidad, handleRestar, handleSumar, handleAgregar }) => {
       </div>
       <div className="agregar-carrito">
         <button onClick={handleAgregar}>
-          Add to the Cart <i class="bi bi-cart-check"></i>
+          Add to the Cart <i className="bi bi-cart-check"></i>
         </button>
       </div>
     </div>
