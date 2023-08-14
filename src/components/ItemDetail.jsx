@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import {Container, Row} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import ItemCount from "./ItemCount";
 import { CartContext } from "../context/CartContext";
 
@@ -20,10 +20,10 @@ const ItemDetail = ({ item }) => {
   return (
     <>
       <Container fluid className="px-0 mx-0">
-        <Row>
+       
           <div className="detail-container d-flex justify-content-center   py-5 flex-wrap ">
             <div className="">
-              <img className="detail-img" src={item.image} alt={item.title} />
+              <img className="detail-img px-0 mx-0" src={item.image} alt={item.title} />
             </div>
             <div className="detail-info  d-flex flex-column pt-3">
               <h3>{item.title}</h3>
@@ -63,7 +63,7 @@ const ItemDetail = ({ item }) => {
               </h6>
             </div>
           </div>
-        </Row>
+        
       </Container>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
